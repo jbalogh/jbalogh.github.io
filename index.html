@@ -1,0 +1,30 @@
+---
+layout: base
+title: Jeff Balogh
+---
+
+<section id="about">
+  <h1>Jeff Balogh</h1>
+  <p>
+    I'm a web developer at Mozilla.<br>
+    All of my code is on <a href="http://github.com/jbalogh">github</a> and
+    sometimes I remember to update
+    <a href="http://twitter.com/jeffbalogh">twitter</a>.
+  </p>
+</section>
+<section id="posts">
+  <h1>Writing</h1>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date|date:"%Y-%m-%d" }}">
+        {{ post.date|date:"%b %d %Y" }}
+      </time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="projects">
+  <h1>Projects</h1>
+</section>

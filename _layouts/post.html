@@ -1,0 +1,15 @@
+---
+layout: base
+---
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <div class="byline">
+      <time datetime="{{ page.date|date:"%Y-%m-%d" }}">
+        {{ page.date|date:"%B %d, %Y" }}
+      </time>
+      by <address><a href="http://jbalogh.me">Jeff Balogh</a></address>
+    </div>
+  </header>
+  {{ content }}
+</article>
