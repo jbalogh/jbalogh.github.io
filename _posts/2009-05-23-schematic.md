@@ -1,6 +1,7 @@
 ---
 title: The worst schema versioning system, ever?
 layout: post
+tags: [python, sql, migration]
 ---
 
 [schematic][] talks to your database over stdin on the command line.  Thus, it

@@ -1,6 +1,7 @@
 ---
 title: Nose Test Runner for Django
 layout: post
+tags: [nose, django]
 ---
 
 **Update: you can now find django-nose on [pypi][] and [github][] with much

@@ -1,6 +1,7 @@
 ---
 title: "Cache Machine: Automatic caching for your Django models"
 layout: post
+tags: [django, python, caching]
 ---
 
 [Cache Machine][1] hooks into Django's ORM to provide easy object caching and
