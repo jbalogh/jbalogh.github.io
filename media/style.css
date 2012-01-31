@@ -18,9 +18,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	background: transparent;
 }
-ol, ul {
-    list-style-type: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -206,19 +203,10 @@ a:visited {
 
 /** Lists **/
 
-ul {
-    text-indent: -6px;
+ul, ol {
+    margin: 1em;
 }
 
-ul li:before {
-    content: "▪ ";
-    font-size: 10px;
-    line-height: 10px;
-}
-
-p + ul {
-    margin: 12px 0;
-}
 
 /** Misc **/
 
