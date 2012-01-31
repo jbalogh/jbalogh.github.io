@@ -11,7 +11,7 @@ layout: nil
  <id>http://jbalogh.me/</id>
  <author>
    <name>Jeff Balogh</name>
-   <email>contact@jeffbalogh.org</email>
+   <email>blog@jbalogh.me</email>
  </author>
 
  {% for post in site.posts %}
