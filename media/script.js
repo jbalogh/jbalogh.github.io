@@ -14,12 +14,23 @@ var makeScript = function(src) {
 var src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 makeScript(src);
 
+var _gauges = _gauges || [];
+(function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f28c0d8cb25bc1e7100004d');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+})();
+
 
 /** Github projects **/
 var names = ['zamboni', 'django-nose', 'django-cache-machine',
-             'django-multidb-router', 'jingo', 'schematic',
-             'jetpacks', 'check'];
-var project_el = document.querySelector('#projects')
+             'jingo', 'schematic', 'check', 'push'];
+var project_el = document.querySelector('#projects');
 if (project_el) {
     var github = 'http://github.com/api/v1/json/jbalogh/';
     var projects = {};
@@ -30,7 +41,7 @@ if (project_el) {
             repo = repos[i];
             projects[repo.name] = repo;
         }
-        dts = []
+        dts = [];
         for (var i in names) {
             var name = names[i],
                 p = projects[name],
