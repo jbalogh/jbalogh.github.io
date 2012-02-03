@@ -122,7 +122,6 @@ table {
 
 body {
     font-weight: normal;
-    color: #727373;
     color: #483318;
     width: 40em;
     margin: 20px auto 0;
@@ -256,4 +255,33 @@ pre {
 #projects dt,
 #projects dd {
     float: left;
+}
+
+#projects:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+footer {
+    font-size: 14px;
+    border-top: 2px solid #e3e3e3;
+    margin-top: 2em;
+}
+
+footer ul {
+    list-style-type: none;
+    width: 40%;
+    float: left;
+}
+
+footer ul:last-child {
+    float: right;
+    text-align: right;
+}
+
+a.secret {
+    color: #483318;
 }

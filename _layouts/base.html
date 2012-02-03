@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/media/style.css">
+    <link rel="stylesheet" href="/media/style.css?z">
     <link rel="alternate" type="application/atom+xml"
           href="http://feeds.feedburner.com/jbalogh"
           title="Feed of latest posts">
   </head>
   <body>
     {{ content }}
-    <!--
-    <a href="#" style="position: absolute; top: 0; right: 0" onclick="toggle()">toggle</a>
-    <script>
-      toggle = function(){ document.body.classList.toggle('grid'); return false; }
-    </script>
-    -->
-    <script defer src="/media/script.js?y"></script>
+    <footer>
+      <ul>
+        <li><a class="secret" href="http://jbalogh.me">Jeff Balogh</a></li>
+        <li>jeff@jbalogh.me</li>
+      </ul>
+      <ul>
+        <li><a href="https://github.com/jbalogh">github.com/jbalogh</a></li>
+        <li><a href="https://twitter.com/jeffbalogh">@jeffbalogh</a></li>
+      </ul>
+    </footer>
+    <script defer src="/media/script.js?z"></script>
   </body>
 </html>
