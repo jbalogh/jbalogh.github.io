@@ -25,30 +25,3 @@ var _gauges = _gauges || [];
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(t, s);
 })();
-
-
-/** Github projects **/
-var names = ['zamboni', 'django-nose', 'django-cache-machine',
-             'jingo', 'schematic', 'check', 'push'];
-var project_el = document.querySelector('#projects');
-if (project_el) {
-    var github = 'http://github.com/api/v1/json/jbalogh/';
-    var projects = {};
-
-    var loadProjects = function(json) {
-        var repos = json.user.repositories;
-        for (var i in repos) {
-            repo = repos[i];
-            projects[repo.name] = repo;
-        }
-        dts = [];
-        for (var i in names) {
-            var name = names[i],
-                p = projects[name],
-                dt = '<dt><a href="' + p.url + '">' + name + '</a></dt>';
-            dts.push(dt + '<dd>' + p.description + '</dd>');
-        }
-        project_el.innerHTML += '<dl>' + dts.join('') + '</dl>';
-    };
-    makeScript(github + '?callback=loadProjects');
-}
