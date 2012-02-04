@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    {% if page.title %}
+      <title>{{ page.title }} &#8226; Jeff Balogh &#8226; jbalogh</title>
+    {% else %}
+      <title>Jeff Balogh &#8226; jbalogh</title>
+    {% endif %}
     <link rel="stylesheet" href="/media/style.css?z">
     <link rel="alternate" type="application/atom+xml"
           href="http://feeds.feedburner.com/jbalogh"
