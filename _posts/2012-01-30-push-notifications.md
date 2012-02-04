@@ -25,9 +25,8 @@ permission. Here's some example code:
 
 {% highlight javascript %}
 var notification = (navigator.notification ||
-                    navigator.mozNotification ||
-                    navigator.webkitNotification);
-if (notification) {
+                    navigator.mozNotification);
+if (notification && notification.requestRemotePermission) {
   // Ask the user to allow notifications.
   var request = notification.requestRemotePermission();
   request.onsuccess = function() {
@@ -51,6 +50,9 @@ pair gets a unique URL.
 
 The URL is available in the `onsuccess` callback as `request.result` and should
 be sent back to the server and stored for future use.
+
+
+## On the Server
 
 Now that we have a URL, we can send messages from our servers to the
 Notification Service.
