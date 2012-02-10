@@ -81,3 +81,8 @@ duplicate notifications on different devices.
 For a more detailed description, please check out our [wiki page][1].
 
 [1]: https://wiki.mozilla.org/Services/Notifications/Push/API
+
+**Update**: If you'd like to give feedback please email me, find me on
+twitter, or reply to [this post][] on mozilla.dev.platform.
+
+[this post]: http://groups.google.com/group/mozilla.dev.platform/browse_thread/thread/52f0c86c6e164d84#
