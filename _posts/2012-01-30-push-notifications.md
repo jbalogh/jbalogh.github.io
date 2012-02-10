@@ -24,8 +24,7 @@ To start sending push notifications, a website needs to ask the user for
 permission. Here's some example code:
 
 {% highlight javascript %}
-var notification = (navigator.notification ||
-                    navigator.mozNotification);
+var notification = navigator.mozNotification;
 if (notification && notification.requestRemotePermission) {
   // Ask the user to allow notifications.
   var request = notification.requestRemotePermission();
@@ -38,9 +37,9 @@ if (notification && notification.requestRemotePermission) {
 }
 {% endhighlight %}
 
-The notification API lives at `navigator.notification`. First we find the right
-API object and check that it exists. If it's there we ask the user for
-permission to send notifications using
+The notification API will live at `navigator.mozNotification` until it gets
+standardized. First we get the API object and check that it exists. If it's
+there we ask the user for permission to send notifications using
 `notification.requestRemotePermission()`, which returns an object we use to
 watch for events.
 
