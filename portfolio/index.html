@@ -81,6 +81,30 @@
       font-size: 0.85rem;
       color: #777;
     }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+
+      section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      section h2 {
+        break-after: avoid;
+      }
+
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      figure {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
   </style>
 </head>
 
