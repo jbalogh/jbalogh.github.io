@@ -231,6 +231,13 @@ pre {
 
 /** Homepage **/
 
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 #about h1 {
     text-align: center;
     font-size: 6em;
