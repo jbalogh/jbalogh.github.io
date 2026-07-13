@@ -231,6 +231,11 @@ pre {
 
 /** Homepage **/
 
+#about h1 {
+    text-align: center;
+    font-size: 6em;
+}
+
 #posts ul {
     list-style-type: none;
     margin: 0;
