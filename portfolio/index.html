@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1.5rem 4rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #fafafa;
+      color: #1a1a1a;
+    }
+
+    header {
+      max-width: 1200px;
+      margin: 0 auto 2.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+
+    header p {
+      margin: 0;
+      color: #666;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    figure {
+      margin: 0;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #eee;
+    }
+
+    figcaption {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Portfolio</h1>
+    <p>For details and pricing, contact jeff@jbalogh.me
+  </header>
+
+  <main>
+
+    <section id="berlin-oil-painting">
+      <h2>Berlin Oil Portraits (2026)</h2>
+      <div class="grid">
+        <figure><img src="b-00.jpg" alt="Berlin Oil Painting 00" loading="lazy"></figure>
+        <figure><img src="b-01.jpg" alt="Berlin Oil Painting 01" loading="lazy"></figure>
+        <figure><img src="b-02.jpg" alt="Berlin Oil Painting 02" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="portrait-studies">
+      <h2>Oil Portrait Studies (2026)</h2>
+      <div class="grid">
+        <figure><img src="p-01.jpg" alt="Portrait Study 01" loading="lazy"></figure>
+        <figure><img src="p-02.jpg" alt="Portrait Study 02" loading="lazy"></figure>
+        <figure><img src="p-03.jpg" alt="Portrait Study 03" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="figure-drawings">
+      <h2>Figure Drawings (2026)</h2>
+      <div class="grid">
+        <figure><img src="f-01.jpg" alt="Figure Drawing 01" loading="lazy"></figure>
+        <figure><img src="f-02.jpg" alt="Figure Drawing 02" loading="lazy"></figure>
+        <figure><img src="f-03.jpg" alt="Figure Drawing 03" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="charcoal-drawings">
+      <h2>Charcoal Studies (2026)</h2>
+      <div class="grid">
+        <figure><img src="c-00.jpg" alt="Charcoal Drawing 00" loading="lazy"></figure>
+        <figure><img src="c-02.jpg" alt="Charcoal Drawing 02" loading="lazy"></figure>
+        <figure><img src="c-03.jpg" alt="Charcoal Drawing 03" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="acrylic-painting">
+      <h2>Acrylic Studies (2025)</h2>
+      <div class="grid">
+        <figure><img src="a-01.jpg" alt="Acrylic Painting 01" loading="lazy"></figure>
+        <figure><img src="a-02.jpg" alt="Acrylic Painting 02" loading="lazy"></figure>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
